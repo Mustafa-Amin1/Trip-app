@@ -1,0 +1,60 @@
+<section *ngIf="singlePackage" class="package-details">
+  <div class="container">
+    <h2 class="pb-5">Tour to {{singlePackage.country}} city</h2>
+    <div class="trip-img">
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <img src="{{singlePackage.countryImg}}" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-6">
+          <div class="small-img">
+            <div class="row">
+              <div class="col-lg-6 mb-4">
+                <img src="{{singlePackage.img1}}" alt="" class="img-fluid">
+              </div>
+              <div class="col-lg-6 mb-4">
+                <img src="{{singlePackage.img2}}" alt="" class="img-fluid">
+              </div>
+              <div class="col-lg-6 mb-4">
+                <img src="{{singlePackage.img3}}" alt="" class="img-fluid">
+              </div>
+              <div class="col-lg-6 mb-4">
+                <img src="{{singlePackage.img4}}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row package-details-content">
+        <div class="col-lg-9">
+          <h3 class="pb-3">Program</h3>
+          <p>{{singlePackage.fullDisc}}</p>
+          <p class="date">From :<span class="date-number"> {{singlePackage.depatureDate}}</span></p>
+          <p class="date">To :<span class="date-number"> {{singlePackage.arrivalDate}}</span></p>
+          <p class="price pb-1">
+            <strong>
+              {{singlePackage.price}}
+            </strong>
+            per person
+          </p>
+          <span class="separat"></span>
+          <div class="company-content mb-3">
+            <h3 class="pb-3 mt-2">Organized by</h3>
+            <div class="row d-flex align-items-center">
+              <div class="col-lg-2">
+                <figure class="company-img">
+                  <img src="{{singlePackageCompany.companyLogo}}" alt="">
+                </figure>
+              </div>
+              <div class="col-lg-4">
+                <p class="mb-1">{{singlePackageCompany.name}}</p>
+                <rating [(ngModel)]="rate" [max]="5" [readonly]="isReadonly"></rating>
+              </div>
+            </div>
+          </div>
+          <a href="" class="btn btn-primary mb-5">Book</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

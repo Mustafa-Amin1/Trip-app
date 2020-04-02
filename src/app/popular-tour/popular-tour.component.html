@@ -1,0 +1,47 @@
+<section class="popular-tour ">
+    <div class="section-header text-center ">
+        <span>
+            <span></span>
+        </span>
+        <h2>Places to see in Egypt</h2>
+        <p>
+            World's leading tour and travels Booking website,Over many packages worldwide.
+        </p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 m-auto">
+                <div class="row">
+                    
+                    <div *ngFor="let city of Allcities" class="col-md-4">
+                        <div  class="card mb-3 item-center">
+                            <div class="card-img">
+                                <img src='{{city.image_url}}' class="card-img-top img-fluid" alt="">
+                                <p class="read-more">
+                                    <span>{{city.name}}</span>
+                                </p>
+                                <p class="trip-icons">
+                                    <span class="content-above_img">
+                                        historic
+                                    </span>
+                                    <i class="fa fa-heart-o"></i>
+                                </p>
+                            </div>
+                            <div class="card-body ">
+                                <h5 class="card-title">{{city.name}}</h5>
+                                <p class="card-text">
+                                    {{city.short_description}}
+                                </p>
+                                <a routerLink="/alexandria" class="our_read-more">Discover</a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="view-tour">
+                        <a routerLink="/tours" class="read-more_button" >view all tour</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

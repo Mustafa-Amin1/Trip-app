@@ -1,0 +1,349 @@
+<!-- start nav -->
+<nav class="secondary_nav ">
+    <div class="container-fulid">
+        <ul class="clearfix">
+            <div class="container">
+                <li><a>Description</a></li>
+                <li><a>Reviews</a></li>
+                <li><a>Booking</a></li>
+            </div>
+        </ul>
+    </div>
+</nav>
+<!-- end nav -->
+<div class="tour-details">
+    <div class="container " *ngIf="singleTourData">
+        <div class="row">
+            <div class="col-lg-8">
+
+                <section id="description">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h1> {{singleTourData.name}}</h1>
+                        </li>
+                        <li class="d-block d-sm-none">
+                            <a  class="add-to-my-trip" (click)="addToMyTrip(singleTourData)" class="btn_1 full-width outline wishlist add-to-my-trip">
+                                <i id="addicon" class="far fa-heart"></i>
+                                Add To My Trip
+                               </a>
+
+                        </li>
+                    </ul>
+                    <h2>Description</h2>
+                    <p>{{singleTourData.shortDescription}}</p>
+
+                    <!-- /row -->
+                    <hr>
+                    <h3>Instagram photos feed</h3>
+                    <div id="instagram-feed-restuarent">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="./../../../../assets/images/image instgram/hotels/Trivago-hotel-best.jpg"
+                                    class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="./../../../../assets/images/image instgram/hotels/download (2).jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="./../../../../assets/images/image instgram/hotels/download (1).jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="./../../../../assets/images/image instgram/hotels/images.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="./../../../../assets/images/image instgram/hotels/download (3).jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="./../../../../assets/images/image instgram/hotels/download (4).jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="./../../../../assets/images/image instgram/hotels/download.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="./../../../../assets/images/image instgram/hotels/images (1).jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="./../../../../assets/images/image instgram/hotels/images (2).jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="./../../../../assets/images/image instgram/hotels/images (3).jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="./../../../../assets/images/image instgram/hotels/images (4).jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6 mb-3">
+                                <img src="./../../../../assets/images/image instgram/hotels/images (5).jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="room_type first">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="./../../../../assets/images/image instgram/hotels/images (3).jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Single Room</h4>
+                                <p>
+
+                                    A single room is for one person and contains a single bed, and will usually be
+                                    quite small
+                                </p>
+                                <ul class="hotel_facilities">
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_2.svg"
+                                            alt="">Single Bed</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_4.svg"
+                                            alt="">Free Wifi</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_5.svg"
+                                            alt="">Shower</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_7.svg"
+                                            alt="">Air Condition</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_8.svg"
+                                            alt="">Hairdryer</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /row -->
+                    </div>
+                    <!-- /rom_type -->
+                    <div class="room_type gray">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="./../../../../assets/images/image instgram/hotels/images (1).jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Double Room</h4>
+                                <p>
+                                    A double room is for two people and may contain a double bed or two singles.
+                                    Sometimes,
+                                </p>
+                                <ul class="hotel_facilities">
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_2.svg"
+                                            alt="">Single Bed</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_4.svg"
+                                            alt="">Free Wifi</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_5.svg"
+                                            alt="">Shower</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_7.svg"
+                                            alt="">Air Condition</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_8.svg"
+                                            alt="">Hairdryer</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /row -->
+                    </div>
+                    <!-- /rom_type -->
+                    <div class="room_type last">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="./../../../../assets/images/image instgram/hotels/images (2).jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Suite Room</h4>
+                                <p>
+                                    connected rooms under one room number. ... In addition to one or more beds and
+                                    bedroom fixtures, such "suites"
+                                    include a living or sitting area, often equipped with a sofa bed
+
+                                </p>
+                                <ul class="hotel_facilities">
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_2.svg"
+                                            alt="">Single Bed</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_4.svg"
+                                            alt="">Free Wifi</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_5.svg"
+                                            alt="">Shower</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_7.svg"
+                                            alt="">Air Condition</li>
+                                    <li><img src="../../../../assets/images/hotels/Alexandria/hotel_facilites_icon_8.svg"
+                                            alt="">Hairdryer</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /row -->
+                    </div>
+                    <!-- /rom_type -->
+                    <hr>
+                    <h3>Location</h3>
+                    <!-- start map -->
+                    <div *ngIf="MapurlSafe" class="place_details-map col-sm-12 ">
+                        <iframe [src]="MapurlSafe" width="100%" height="250" frameborder="0" style="border:0;"
+                            allowfullscreen="" alt="map"></iframe>
+                    </div>
+                    <!-- End Map -->
+                </section>
+                <!-- /section -->
+                <section id="reviews">
+                    <h2>Reviews</h2>
+                    <div class="reviews-container">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div id="review_summary">
+                                    <strong>{{singleTourData.rate}}</strong>
+                                    <em>Superb</em>
+                                    <small>Based on 4 reviews</small>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="row">
+                                    <div class="col-lg-10 col-9">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-3"><small><strong>5 stars</strong></small></div>
+                                </div>
+                                <!-- /row -->
+                                <div class="row">
+                                    <div class="col-lg-10 col-9">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%"
+                                                aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-3"><small><strong>4 stars</strong></small></div>
+                                </div>
+                                <!-- /row -->
+                                <div class="row">
+                                    <div class="col-lg-10 col-9">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 60%"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-3"><small><strong>3 stars</strong></small></div>
+                                </div>
+                                <!-- /row -->
+                                <div class="row">
+                                    <div class="col-lg-10 col-9">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 20%"
+                                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-3"><small><strong>2 stars</strong></small></div>
+                                </div>
+                                <!-- /row -->
+                                <div class="row">
+                                    <div class="col-lg-10 col-9">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 0" aria-valuenow="0"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-3"><small><strong>1 stars</strong></small></div>
+                                </div>
+                                <!-- /row -->
+                            </div>
+                        </div>
+                        <!-- /row -->
+                    </div>
+
+                    <hr>
+
+                    <div class="reviews-container" *ngIf="reviews">
+                        <h2>Comments</h2>
+                        <div class="review-box clearfix" *ngFor="let item of reviews">
+                            <div class="row">
+                                <figure class="figure col-md-2 col-sm-1">
+                                    <img src="../../../../assets/images/avatar/avatar.png" style="width: 100%; border-radius: 50%;"
+                                        class="img-fluid">
+                                </figure>
+                                <div class="rev-content col-md-10 col-sm-11">
+                                    <div class="rating">
+                                        <ngb-rating [rate]=[item.rate]></ngb-rating>
+                                    </div>
+                                    <div class="rev-info">
+                                        {{item.name}}
+                                    </div>
+                                    <div class="rev-text">
+                                        <p>
+                                            {{item.message}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /review-box -->
+                    </div>
+                    <!-- /review-container -->
+                </section>
+                <!-- /section -->
+                <hr>
+                <div class="add-review">
+                    <h5>Leave a Review</h5>
+                    <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label>Name and Lastname *</label>
+                                <input formControlName="name" placeholder="Your name" class="form-control"> <br>
+
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Email *</label>
+                                <input formControlName="email" type="email" class="form-control">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Rating </label>
+                                <div class="custom-select-form ">
+                                    <select (change)="selectChangeHandler($event)" class="wide">
+                                        <option [ngValue]="1">1</option>
+                                        <option [ngValue]="2">2</option>
+                                        <option [ngValue]="3">3</option>
+                                        <option [ngValue]="4">4</option>
+                                        <option [ngValue]="5" selected>5</option>
+                                        <option [ngValue]="6">6</option>
+                                        <option [ngValue]="7">7</option>
+                                        <option [ngValue]="8">8</option>
+                                        <option [ngValue]="9">9</option>
+                                        <option [ngValue]="10">10</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Your Review</label>
+                                <textarea formControlName="message" placeholder="Your message" class="form-control"
+                                    class="form-control" style="height:130px;"></textarea>
+                            </div>
+                            <div class="form-group col-md-12 submit">
+                                <button type="submit" [disabled]="myForm.invalid" class="btn_1">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /col -->
+
+            <aside class="col-lg-4 d-none d-lg-block" id="sidebar">
+                <div class="tour-img">
+                    <img src="{{singleTourData.img}}">
+                </div>
+                <div class="box_detail booking">
+                    <div class="price">
+                        <span>{{singleTourData.price}} <small>/person</small></span>
+                        <div class="score"><span>Good<em>350 Reviews</em></span><strong>{{singleTourData.rate}}</strong>
+                        </div>
+                    </div>
+                    <a  class="add-to-my-trip" (click)="addToMyTrip(singleTourData)" class="btn_1 full-width outline wishlist">
+                        <i id="addicon" class="far fa-heart"></i>
+                        Add To My Trip
+                    </a>
+
+                </div>
+                <ul class="share-buttons">
+                    <li><a class="fb-share" href="#0"><i class="fab fa-facebook-f"></i>Share</a></li>
+                    <li><a class="twitter-share" href="#0"><i class="fab fa-twitter"></i> Tweet</a></li>
+                    <li><a class="gplus-share" href="#0"><i class="far fa-envelope-open"></i> Share</a></li>
+                </ul>
+            </aside>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /bg_color_1 -->
+
+<!--/main-->

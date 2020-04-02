@@ -1,0 +1,68 @@
+<section class="all-restaurant" >
+    <div class="container">
+        <div class="section-head text-left ">
+            <span>
+                <span></span>
+            </span>
+            <h3>Popular Visits</h3>
+            <p>Most recommended restaurants in the City.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-6" *ngFor="let popvisit of popularVisits">
+                <div class="card  all-restaurant__details wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <small>
+                                    <div class="score"><strong class="rate">{{popvisit.rate}}</strong></div>
+                                </small>
+                                <img [src]="popvisit.img" class="card-img" alt="alexandria tour {{popvisit.name}}">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <a routerLink="/alexandria/places/{{popvisit.id}}"> {{popvisit.name}} </a>
+                                    </h5>
+                                    <p class="card-text">{{popvisit.shortDescription}}.</p>
+                                    <ul>
+                                        <li><a>Add To My Trip</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                
+                    <!-- <div class="row no-gutters">       
+                        <div class="col-lg-5  col-12 all-restaurant__details--img">
+                            <figure>
+                                <a routerLink="/Alexandria/visits/{{popvisit.id}}">
+                                <small>   <div class="score"><strong class="rate">{{popvisit.rate}}</strong></div></small>
+                                <img class="card-img-top  img-fluid " [src]="popvisit.img"
+                                alt="alexandria tour {{popvisit.name}}">
+                                    <div class="read_more">
+                                        <span>Read more</span>
+                                    </div>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-lg-7 col-12 all-restaurant__details--content">
+                            <div class="card-body">
+                                <div class="card-body-info">
+                                   
+                                    <h4><a routerLink="/Alexandria/visits/{{popvisit.id}}"> {{popvisit.name}} </a></h4>
+                                    <p>{{popvisit.shortDescription}}</p>
+                                    
+                                </div>
+                                <ul>
+                                    <li><a >Add To My Trip</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+                <div *ngIf="myvisits" class="view-all__hotels">
+                    <a routerLink="/places">view all ({{myvisits.length}})</a>
+                </div>
+        </div>
+    </div>
+</section>

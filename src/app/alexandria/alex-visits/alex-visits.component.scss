@@ -1,0 +1,159 @@
+.all-restaurant:not(:last-of-type) {
+    margin: 0 0 3.5rem;
+    background-color: #f8f8f8;
+    
+  }
+  .all-restaurant:last-of-type {
+    padding-bottom: 3.5rem;
+    background-color: #f8f8f8;
+    
+  }
+  .all-restaurant__details {
+    box-shadow: 0px 0px 35px -12px rgba(44, 44, 44, 0.27);
+    position: relative;
+    margin-bottom: 1.5rem;
+    border:none;
+  }
+  .section-head{margin-bottom: 2rem;}
+  .section-head span{
+    background:#ccc;
+    width: 120px;
+    height: 2px;
+    display: block;
+   
+}
+.section-head span span:first-child{
+    background: #2eca6a;
+    width: 60px;
+    height: 2px;
+}
+.section-head p{
+    font-size: .9rem;
+}
+  img {
+  width: 100%;
+  height: 100%;
+  }
+  
+  ul {
+  padding: 10px;
+  margin-bottom: 0;
+  text-align: right;
+  }
+  ul, ol {
+  list-style: none;
+  // margin: 0 0 25px 0;
+  padding: 0;
+  }
+ 
+  ul li {
+  display: inline-block;
+  margin-right: 0;
+  }
+  ul li a{
+  text-decoration: none;
+  background-color: #0e843c;
+  font-size: .83rem;
+  font-weight: bold;
+  padding:.4rem 1rem;
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .5s;
+  border: 1px solid #0e843c;
+  }
+  ul li:hover a{
+    background-color: white;
+    color: #0e843c;
+    border: 1px solid #0e843c;
+  }
+  .score span {
+  display: inline-block;
+  position: relative;
+  top: 7px;
+  margin-right: 8px;
+  font-size: 10px;
+  font-size: 0.75rem;
+  text-align: right;
+  line-height: 1.1;
+  font-weight: 500;
+  }
+  .score span em {
+  display: block;
+  font-weight: normal;
+  
+  font-size: 0.6875rem;
+  }
+  .score .rate {
+top:10px ;
+  color: #fff;
+  line-height: 1;
+ height: 2rem;
+ width: 2.5rem;
+  padding: 7px;
+
+  }
+  .card-body{
+  // padding:10px 20px  0px;
+  
+  }
+  .card-body p{
+  margin: 20px 0px;
+  }
+  .card-body-info {
+  min-height: 245px;
+  }
+  a.wish_bt {
+  position: absolute;
+  right: 15px;
+  //top: 15px;
+  z-index: 1;
+  display: inline-block;
+  color: #555;
+  line-height: 1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  transition: .5s;
+}
+  h5 a{
+  color:#32a067;
+  }
+  .read-more_button:hover{
+    background: none;
+    color: #0e843c
+}
+  .card-body-info h4  {
+
+  font-size: 1.25rem;
+  margin-top: 0;
+  color: #32a067;
+  }
+  h5{
+    margin-bottom: 0
+  }
+  .card-body-info p{
+      font-size: .9rem;
+  }
+  .card-body-info .price {
+  display: inline-block;
+  font-weight: 500;
+  color: #999;
+  }
+  .card-body-info .price strong {
+  color: #32a067;
+  }
+  .view-all__hotels{
+    margin-top: .7rem;
+    display:block;
+    
+}
+.view-all__hotels a{
+    color: #32a067;  
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-left: 1rem
+}

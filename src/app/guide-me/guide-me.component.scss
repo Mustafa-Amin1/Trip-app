@@ -1,0 +1,177 @@
+.guide-me-page {
+  background-color: #f0f2f5;
+  min-height: 500px;
+}
+.guide-me__title {
+  margin: 3rem 0;
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .guide-me__title::after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 530px;
+    background: #32a067;
+    width: 60px;
+    height: 2px;
+  }
+}
+
+.userpost {
+  background: white;
+  border-radius: 20px;
+  padding: 1.2rem;
+  box-shadow: 3px 3px 4px #cfd1ce;
+}
+.userpost__title {
+  background-color: #2ecb79;
+  border-radius: 20px;
+  color: #fff;
+  padding: 2rem ;
+}
+//user -info
+.userpost__info {
+  align-items: baseline;
+  margin-bottom: 1rem;
+  figure {
+    width: 40px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .user-name {
+    font-size: 1rem;
+  }
+}
+//user trips
+.userPost__favorite-trips {
+  .fvourit__list {
+    border-right: 1px solid #d6d6d6;
+ 
+    p {
+      font-weight: 500;
+      color: #32a067;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+    li{
+      position: relative;
+    }
+    li::after{
+      content: '_';
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      top: -7px;
+      left: -14px;
+    }
+  }
+}
+
+.delPost {
+  position: relative;
+  bottom: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.noUsersPost {
+  margin-top: 10rem;
+}
+.tour-guide-reply {
+  figure {
+    width: 90px;
+    align-self: baseline;
+    margin-bottom: 0;
+  }
+  figcaption{
+    align-self: center;
+  }
+  .tour-message {
+    .tour-message__reply{
+      background-color: #f0f2f5;
+      width: fit-content;
+      height: fit-content;
+      position: relative;
+      border-radius: 10px;
+    }
+    p {
+      word-break: break-all;
+      line-height: 1.7;
+     
+    }
+
+    .delBtn {
+      margin-left: 35px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .likeBtn {
+      cursor: pointer;
+    }
+    .like-icon {
+      color: red;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+form input {
+  min-height: 4.2rem;
+  width: 26rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #f0f2f5;
+}
+
+form button {
+  height: 100%;
+  width: 5rem;
+  font-size: 16px;
+  font-weight: bold;
+  background: #0e843c;
+  border-radius: 10px;
+  position: relative;
+}
+
+.sponsors-ads {
+  .sponsors-ads__content {
+    box-shadow: 2px 2px 5px #e0dada;
+    padding: 1.2rem;
+    background: #fdfdfd;
+
+    figure {
+      width: 50px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #ffffff;
+      }
+    }
+  }
+}
+
+//like on tour guide reply
+.heart {
+  display: none;
+}

@@ -1,0 +1,52 @@
+<nav class="nav bg-white">
+    <div class="container-fluid">
+        <div class="logo">
+            <a routerLink="home">
+                <img src="../../assets/logo.png" alt="">
+            </a>
+        </div>
+        <div id="mainListDiv" class="main_list ml-auto">
+            <ul id="navlinks">
+                <li>
+                    <a routerLink="/" (click)="activeLink()" class="navLink active">home</a>
+                </li>
+                <li>
+                    <a  routerLink="/places" (click)="activeLink()" class="navLink">places</a>
+                </li>
+                <li>
+                    <a routerLink="/hotels" (click)="activeLink()" class="navLink">hotels</a>
+                </li>
+                <li>
+                    <a routerLink="/restaurants" (click)="activeLink()" class="navLink">resturants</a>
+                </li>
+                <li>
+                    <a routerLink="/companypackage" (click)="activeLink()" class="navLink">Packages</a>
+                </li>
+                <li>
+                    <a routerLink="/guide-me" (click)="guideMe()" (click)="activeLink()" class="navLink">guide me</a>
+                </li>
+                <li id="user__myTrip">
+                    <a routerLink="/my-trip" (click)="activeLink()" class="navLink">my trip</a>
+                </li>
+                <li id="tourguide__profile">
+                    <a routerLink="/tourguid" (click)="activeLink()" class="navLink">tour guide</a>
+                </li>
+                <li id="login-btn">
+                    <a routerLink="/login" (click)="activeLink()">login/register</a>
+                </li>
+                <li id="logout-btn">
+                    <span class="pr-2  d-md-inline d-none">{{userName}}</span>
+                    <a role="button" (click)="logOut()">logout</a>
+                </li>
+                <li id="dashboard">
+                    <a>Dashboard</a>
+                </li>
+            </ul>
+        </div>
+        <span class="navTrigger" (click)="toggleNav()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>

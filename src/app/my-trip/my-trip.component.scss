@@ -1,0 +1,209 @@
+form input {
+  min-height: 30px;
+  width:100%;
+  margin-bottom: 1rem;
+}
+
+form textarea {
+  min-height: 100px;
+  width: 100%;
+}
+
+form button {
+  background-color: #0E843C;
+  color: #ffffff;
+  padding: 10px 30px;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+}
+button{ border-radius:0 ; -webkit-border-radius:0 ; -moz-border-radius:0 ; -ms-border-radius:0 ; -o-border-radius:0 ; }
+.card-text strong{
+  color: #0E843C
+}
+.trip-map {
+  padding: 50px 0px;
+}
+.trip-map h3 {
+  text-transform: capitalize;
+  color: black;
+  font-weight: bold;
+}
+.trip-map h4 {
+  text-transform: uppercase;
+  color: black;
+  margin: 20px 0px;
+}
+.trip-map .card {
+  background-color: #fff;
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.trip-map .card-body h5 {
+  color: #0E843C ;
+}
+.trip-map .card-body p .price {
+  display: inline-block;
+  font-weight: 500;
+  color: #999;
+}
+.trip-map .card-body p .price strong {
+  color: #0E843C;
+}
+
+.user-information {
+  background-color: lavender;
+  padding: 50px 0px;
+}
+
+.user-information .card {
+  padding: 10px 0px;
+  border-radius: 25px;
+}
+.user-information .card .image p {
+  color:#0E843C;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+.user-information .card .image img {
+  border-radius: 20px;
+  padding: 2px;
+  border-radius: 20px;
+  width: 100%;
+  height: 150px;
+  width: 150;
+  width: 150px;
+}
+.user-information .card .image input {
+  position: relative;
+  bottom: 43px;
+  left: 50px;
+  opacity: 0;
+}
+
+.user-information .card h5 {
+  position: relative;
+  bottom: 30px;
+}
+
+.user-information .card a {
+  text-decoration: none;
+  color: #5e5b5b;
+  font-size: 22px;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+//user messages
+.message-count {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  right: 50%;
+  left: 50%;
+  bottom: 100%;
+  background-color: #fc1f1f;
+  font-size: 12px;
+  border-radius: 50%;
+  color: wheat;
+  font-weight: bold;
+}
+
+ul.dropdown-menu {
+  border: 1px solid white;
+  width: 20rem;
+  min-height: 20rem;
+  box-shadow: 2px 2px 6px #dadada80;
+  padding: 1rem 2rem !important;
+  background-color: #eeeeee;
+// 
+  li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid white;
+    
+    figure {
+      width: 30px;
+      display: flex;
+      justify-content: space-evenly;
+      margin-right: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 50%;
+      }
+    }
+    a.dropdown-item {
+      font-size: 14px;
+    }
+  }
+}
+
+.dropdown-menu li:nth-child(even) {
+  background-color: #dae4f0;
+}
+.dropdown-menu li:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+//end user messages
+.user-information .card a:hover {
+  color: green;
+}
+.user-information .card .col-4 {
+  padding: 20px 0px;
+}
+
+.user-trip-title {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #000;
+  margin: 25px 0 0 0;
+  font-family: Quicksand, sans-serif;
+}
+.item-delete{
+  display: none;
+}
+.showDeleteBtn{
+  display: inline;
+}
+@media screen and (min-width: 992px) {
+  .user-trip-title::after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 530px;
+    background: #2eca6a;
+    width: 60px;
+    height: 2px;
+  }
+}
+.card .figure {
+  width: 100%;
+}
+.card .figure .card-img-top {
+  width: 100%;
+  max-height: 14rem;
+  min-height: 14rem;
+}
+.category {
+  border-bottom: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0;
+  h4{
+    display: inline-block;
+    cursor: pointer;
+  }
+  i{
+    cursor: pointer;
+  }
+}
