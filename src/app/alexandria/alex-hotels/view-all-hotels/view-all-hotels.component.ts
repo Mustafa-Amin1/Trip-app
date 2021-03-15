@@ -28,7 +28,7 @@ export class ViewAllHotelsComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.http.get('http://localhost:3000/hotels').subscribe(data => {
+    // this.http.get('http://tipme-api.herokuapp.com/hotels').subscribe(data => {
     //   this.allHotels = data;
     // })
     this.service.getToursData().subscribe(data => {

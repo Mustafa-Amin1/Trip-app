@@ -9,13 +9,13 @@ export class RestaurantsService {
   constructor(private http:HttpClient) { }
   // Start get data from api
     getToursData(){
-      return this.http.get("http://localhost:3000/restaurants")
+      return this.http.get("http://tipme-api.herokuapp.com/restaurants")
     }
   // End get data from api
 
   //Start send id
   getToursDataId(id){
-    return this.http.get("http://localhost:3000/restaurants/"+id)
+    return this.http.get("http://tipme-api.herokuapp.com/restaurants/"+id)
   }
   //End send id
 }
