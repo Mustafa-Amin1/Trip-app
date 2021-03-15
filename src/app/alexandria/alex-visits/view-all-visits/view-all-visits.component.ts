@@ -129,7 +129,7 @@ export class ViewAllVisitsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.http.get('http://tipme-api.herokuapp.com/tours').subscribe(data => {
+    this.http.get('http://https://tipme-api.herokuapp.com//tours').subscribe(data => {
       this.allVisits = data;
     })
   }

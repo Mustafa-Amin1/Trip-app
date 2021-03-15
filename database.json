@@ -155,6 +155,19 @@
       "role": "tourguide",
       "id": 36,
       "aboutUserName": "dasdsadsadasdas"
+    },
+    {
+      "userName": "mohamed",
+      "email": "mohamed@yahoo.com",
+      "password": "aaAA@@66",
+      "confirmPassword": "aaAA@@66",
+      "role": "tourguide",
+      "id": 37,
+      "aboutUserName": "dsadsad",
+      "experience": "dsadsadasdsad",
+      "language": "adasdasd",
+      "OtherGuiding": "dasdsad",
+      "PrivateGuide": "dsadsads"
     }
   ],
   "user-favorite-trip": [
@@ -232,6 +245,55 @@
       "shortDescription": "Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed ut sint blandit efficiendi. Atomorum explicari eu qui, est enim quaerendum te. Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.",
       "userId": 2,
       "userName": "aya"
+    },
+    {
+      "city": "alex",
+      "id": "1.1Mustafa AMIN",
+      "category": "visit",
+      "title": "Alexandria",
+      "tour_category": "libraries",
+      "name": " Bibliotheca Alexandria",
+      "name_tag": "Alex",
+      "shortDescription": "  The Bibliotheca Alexandrina is a major library and cultural center located on the shore of the Mediterranean Sea in the Egyptian city of Alexandria",
+      "fullDescription": "is a major library and cultural center located on the shore of the Mediterranean Sea in the Egyptian city of Alexandria. It is both a commemoration of the Library of Alexandria that was lost in antiquity, and an attempt to rekindle something of the brilliance that this earlier center of study and erudition represented. The idea of reviving the old library dates back to 1974, when a committee set up by Alexandria University selected a plot of land for its new library.Construction work began in 1995 and, after some US$220 million had been spent, the complex was officially inaugurated on 16 October 2002.In 2010,the library received a donation of 500,000 books from the Bibliothèque nationale de France (BnF). The gift makes the Bibliotheca Alexandrina the sixth-largest Francophone library in the world.The library has shelf space for eight million books, with the main reading room covering 20,000 square metres (220,000 sq ft). The complex also houses a conference center; specialized libraries for maps, multimedia, the blind and visually impaired, young people, and for children; four museums; four art galleries for temporary exhibitions; 15 permanent exhibitions; a planetarium; and a manuscript restoration laboratory.",
+      "img": "../../../assets/images/visits/alex/bib.jpg",
+      "rate": 9.9,
+      "price": "5$",
+      "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13649.7118753824!2d29.9092012!3d31.2088705!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa34cc632ec23e7!2sBibliotheca%20Alexandrina!5e0!3m2!1sen!2seg!4v1581655284706!5m2!1sen!2seg",
+      "userId": 31,
+      "userName": "Mustafa AMIN"
+    },
+    {
+      "city": "alex",
+      "id": "1.2Mustafa AMIN",
+      "category": "visit",
+      "title": "Alexandria",
+      "name_tag": "Alexandria_tours",
+      "tour_category": "museums",
+      "name": "Alexandria National Museum",
+      "shortDescription": "It was inaugurated the 31 December 2003 by Hosni Mubarak and it is located in a renovated Italian style palace in Tariq Al-Horreya Street (former Rue Fouad). ",
+      "fullDescription": "The museum is located in a former Italianate mansion. It's the former home of a wood sales person. It used to house the United States consulate. The building dates back to 1926, located around a large garden, in addition to housing a basement. The three-storey palace was a meeting place for the Egyptian upper-class society of Alexandria.",
+      "img": "../../../assets/images/visits/alex/2019-10-11.jpg",
+      "rate": 9.1,
+      "price": "8$",
+      "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13650.8932861767!2d29.9132227!3d31.200684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa2ebaf38ebb3039b!2sAlexandria%20National%20Museum!5e0!3m2!1sen!2seg!4v1581628063565!5m2!1sen!2seg",
+      "userId": 31,
+      "userName": "Mustafa AMIN"
+    },
+    {
+      "city": "alex",
+      "id": "3.1",
+      "category": "hotel",
+      "img": "../../../assets/images/hotels/Alexandria/forseason/forseason.jpg",
+      "name": "Four Seasons",
+      "title": "Alexandria",
+      "rate": "9.2",
+      "price": "174$",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.1033390952925!2d29.964572614320016!3d31.245562481461317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c52e30aaf1df%3A0xc9d2d428ea2ba3d2!2sFour%20Seasons%20Hotel%20Alexandria%20at%20San%20Stefano%2C%20Egypt!5e0!3m2!1sen!2seg!4v1582032525857!5m2!1sen!2seg",
+      "shortDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay",
+      "fullDescription": "Set on a busy roundabout, this low-key hotel is 1 km from the nearest beach, 2 km from the Citadel of Qaitbay, a 15th-century seafront fortress, and 9 km from Alexandria International Airport.The straightforward rooms have wood floors and balconies, and offer Wi-Fi access, flat-screen TVs and minibars. Some have sitting areas.Amenities include an airy restaurant, and a down-to-earth cafe featuring outdoor seating.",
+      "userId": 31,
+      "userName": "Mustafa AMIN"
     }
   ],
   "user-post": [
@@ -298,6 +360,22 @@
       "postUserId": 35,
       "postId": 2,
       "id": 6
+    },
+    {
+      "message": "dasdasdasdsa",
+      "replierId": 31,
+      "replierName": "Mustafa AMIN",
+      "postUserId": 31,
+      "postId": 3,
+      "id": 7
+    },
+    {
+      "message": "dasdsa",
+      "replierId": 31,
+      "replierName": "Mustafa AMIN",
+      "postUserId": 31,
+      "postId": 3,
+      "id": 8
     }
   ],
   "cities": [
