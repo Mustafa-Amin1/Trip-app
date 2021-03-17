@@ -14,39 +14,39 @@ export class UsersService {
   constructor(private http: HttpClient) { }
   putuserdata(id,obj){
     
-    return this.http.put(`http://https://tipme-api.herokuapp.com//users/${id}`,obj)
+    return this.http.put(`https://tipme-api.herokuapp.com/users/${id}`,obj)
   }
   getTour(){
-    return this.http.get("http://https://tipme-api.herokuapp.com//tours");
+    return this.http.get("https://tipme-api.herokuapp.com/tours");
   }
   getCompanyData(){
-    return this.http.get("http://https://tipme-api.herokuapp.com//company");
+    return this.http.get("https://tipme-api.herokuapp.com/company");
   }
   getCompanyPackage(id) {
-    return this.http.get(`http://https://tipme-api.herokuapp.com//company/${id}`);
+    return this.http.get(`https://tipme-api.herokuapp.com/company/${id}`);
   }
 
   getTourGuid() {
-    return this.http.get("http://https://tipme-api.herokuapp.com//tourGuid");
+    return this.http.get("https://tipme-api.herokuapp.com/tourGuid");
   }
   getTourGuidPackage(id) {
-    return this.http.get(`http://https://tipme-api.herokuapp.com//tourGuid/${id}`);
+    return this.http.get(`https://tipme-api.herokuapp.com/tourGuid/${id}`);
   }
 
   postUser(user) {
-    return this.http.post("http://https://tipme-api.herokuapp.com//users", user);
+    return this.http.post("https://tipme-api.herokuapp.com/users", user);
   }
 
   getUser() {
-    return this.http.get("http://https://tipme-api.herokuapp.com//users");
+    return this.http.get("https://tipme-api.herokuapp.com/users");
   }
   gettourguide(id) {
-    return this.http.get(`http://https://tipme-api.herokuapp.com//users/${id}`);
+    return this.http.get(`https://tipme-api.herokuapp.com/users/${id}`);
   }
   // thses methodes to get  user favorite trip and send it in his profile 
   postUserFavoriteTrip(obj) {
     const headers = { 'Content-Type': 'application/json ; charset=UTF-8' };
-    return this.http.post('http://https://tipme-api.herokuapp.com//user-favorite-trip/', obj, { headers });
+    return this.http.post('https://tipme-api.herokuapp.com/user-favorite-trip/', obj, { headers });
 
     // return this.http.post<any>(url, obj , headers);
 
@@ -54,11 +54,11 @@ export class UsersService {
 
 
   getUserFavoriteTrip() {
-    return this.http.get('http://https://tipme-api.herokuapp.com//user-favorite-trip/');
+    return this.http.get('https://tipme-api.herokuapp.com/user-favorite-trip/');
   }
 
   deleteUserFavoriteTrip(id) {
-    return this.http.delete('http://https://tipme-api.herokuapp.com//user-favorite-trip/' + id)
+    return this.http.delete('https://tipme-api.herokuapp.com/user-favorite-trip/' + id)
   }
 // get tour guid of trip
 
@@ -68,17 +68,17 @@ export class UsersService {
   postUserPost(obj) {
     const headers = { 'Content-Type': 'application/json ; charset=UTF-8' };
 
-    return this.http.post('http://https://tipme-api.herokuapp.com//user-post/', obj, { headers });
+    return this.http.post('https://tipme-api.herokuapp.com/user-post/', obj, { headers });
   }
 
 
   getUserPost() {
 
-    return this.http.get('http://https://tipme-api.herokuapp.com//user-post/');
+    return this.http.get('https://tipme-api.herokuapp.com/user-post/');
   }
 
   cancelUserPost(id) {
-    return this.http.delete('http://https://tipme-api.herokuapp.com//user-post/'+id)
+    return this.http.delete('https://tipme-api.herokuapp.com/user-post/'+id)
   }
 
 
@@ -86,29 +86,29 @@ export class UsersService {
 
   postTourGuideReply(obj) {
     const headers = { 'Content-Type': 'application/json ; charset=UTF-8' };
-    return this.http.post('http://https://tipme-api.herokuapp.com//guide-reply/', obj, { headers });
+    return this.http.post('https://tipme-api.herokuapp.com/guide-reply/', obj, { headers });
   }
 
   getTourGuideReply() {
-    return this.http.get('http://https://tipme-api.herokuapp.com//guide-reply/');
+    return this.http.get('https://tipme-api.herokuapp.com/guide-reply/');
   }
 
   deleteTourGuideReply(id) {
-    return this.http.delete('http://https://tipme-api.herokuapp.com//guide-reply/' + id)
+    return this.http.delete('https://tipme-api.herokuapp.com/guide-reply/' + id)
   }
 
 
   postUserPostAndGuideReply(obj) {
     const headers = { 'Content-Type': 'application/json ; charset=UTF-8' };
-    return this.http.post('http://https://tipme-api.herokuapp.com//post-reply', obj, { headers })
+    return this.http.post('https://tipme-api.herokuapp.com/post-reply', obj, { headers })
 
   }
   getUserPostAndGuideReply() {
-    return this.http.get('http://https://tipme-api.herokuapp.com//post-reply');
+    return this.http.get('https://tipme-api.herokuapp.com/post-reply');
 
   }
   deleteUserPostAndGuideReply() {
-    return this.http.get('http://https://tipme-api.herokuapp.com//post-reply');
+    return this.http.get('https://tipme-api.herokuapp.com/post-reply');
   }
 
   

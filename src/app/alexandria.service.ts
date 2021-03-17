@@ -8,14 +8,14 @@ import { HttpClient } from '@angular/common/http';
 export class AlexandriaService {
   alex_tours;
   constructor(private http: HttpClient) { 
-    this.http.get('http://https://tipme-api.herokuapp.com//tours').subscribe(data => {
+    this.http.get('https://tipme-api.herokuapp.com/tours').subscribe(data => {
       this.alex_tours = data;
   })}
   }
   
 
 //   myapi = fetch(
-//     " http://https://tipme-api.herokuapp.com//tours",
+//     " https://tipme-api.herokuapp.com/tours",
 //     {
 //         method: "get",
 //         headers: {

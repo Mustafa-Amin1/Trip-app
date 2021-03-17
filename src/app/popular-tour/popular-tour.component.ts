@@ -40,7 +40,7 @@ export class PopularTourComponent implements OnInit {
   ngOnInit() {
 
     //**************************get cities data from api********************8
-    this.http.get('http://https://tipme-api.herokuapp.com//cities').subscribe(data => {
+    this.http.get('https://tipme-api.herokuapp.com/cities').subscribe(data => {
       this.Allcities = data;
     })
     //********************end get data from api***********************8

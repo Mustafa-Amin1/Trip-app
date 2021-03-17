@@ -9,13 +9,13 @@ export class HotelsService {
   constructor(private http:HttpClient) { }
    // Start get data from api
    getToursData(){
-    return this.http.get("http://https://tipme-api.herokuapp.com//hotels")
+    return this.http.get("https://tipme-api.herokuapp.com/hotels")
   }
   // End get data from api
 
   //Start send id
   getToursDataId(id){
-    return this.http.get("http://https://tipme-api.herokuapp.com//hotels/"+id)
+    return this.http.get("https://tipme-api.herokuapp.com/hotels/"+id)
   }
   //End send id
 
